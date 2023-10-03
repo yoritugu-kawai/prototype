@@ -11,6 +11,10 @@ void GameScene::Initialize() {
 	dxCommon_ = DirectXCommon::GetInstance();
 	input_ = Input::GetInstance();
 	audio_ = Audio::GetInstance();
+	textureHandle_ = TextureManager::Load("enemy.png");
+	model_ = Model::Create();
+	viewProjection_.Initialize();
+	enemy_->Initialize(model_, textureHandle_);
 }
 
 void GameScene::Update() {}
@@ -41,7 +45,7 @@ void GameScene::Draw() {
 	/// <summary>
 	/// ここに3Dオブジェクトの描画処理を追加できる
 	/// </summary>
-
+	enemy_->Draw(viewProjection_);
 	// 3Dオブジェクト描画後処理
 	Model::PostDraw();
 #pragma endregion
