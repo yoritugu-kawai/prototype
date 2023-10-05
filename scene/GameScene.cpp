@@ -12,7 +12,6 @@ void GameScene::Initialize() {
 	input_ = Input::GetInstance();
 	audio_ = Audio::GetInstance();
 	textureHandle_ = TextureManager::Load("enemy.png");
-	
 	model_ = Model::Create();
 	
 	viewProjection_.Initialize();
@@ -26,12 +25,12 @@ void GameScene::Initialize() {
 	enemy_[5] = new Enemy;
 
 
-	enemy_[0]->Initialize(model_, textureHandle_, -22, 0,-0.5f,0.05f);
-	enemy_[1]->Initialize(model_, textureHandle_, 10, -10,0.5f,-0.5f);
-	enemy_[2]->Initialize(model_, textureHandle_, -23, -20,-0.5f,-0.5f);
-	enemy_[3]->Initialize(model_, textureHandle_, 0, 0,0.5f,0.5f);
-	enemy_[4]->Initialize(model_, textureHandle_, -30, -10,-0.5f,0.5f);
-	enemy_[5]->Initialize(model_, textureHandle_, 20, 5,0.5f,-0.5f);
+	enemy_[0]->Initialize(model_,textureHandle_, -22, 0,-0.5f,0.05f);
+	enemy_[1]->Initialize(model_,textureHandle_, 10, -10,0.5f,-0.5f);
+	enemy_[2]->Initialize(model_,textureHandle_, -23, -20,-0.5f,-0.5f);
+	enemy_[3]->Initialize(model_,textureHandle_, 0, 0,0.5f,0.5f);
+	enemy_[4]->Initialize(model_,textureHandle_, -30, -10,-0.5f,0.5f);
+	enemy_[5]->Initialize(model_,textureHandle_, 20, 5,0.5f,-0.5f);
 }
 
 void GameScene::Update() {

@@ -52,6 +52,7 @@ private: // メンバ変数
 	/// </summary>
 	///
 	uint32_t textureHandle_ = 0;
+	///Model* textureHandle_;
 
 	Model* model_ = nullptr;
 

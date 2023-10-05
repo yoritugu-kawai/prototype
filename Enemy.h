@@ -4,8 +4,9 @@
 #include<WorldTransform.h>
 class Enemy  {
 public:
-	void Initialize(Model* model, 
-		uint32_t textureHandle, float x, float y, float kCharacterSpeedx,
+	void Initialize(
+	    Model* model, uint32_t textureHandle_,
+		 float x, float y, float kCharacterSpeedx,
 	    float kCharacterSpeedy);
 
 	void Update();
