@@ -22,6 +22,7 @@ void Enemy::Update() {
 	
 	///
 
+
   /*  const float kMoveLimitX = 33;
 	const float kMoveLimitY = 18;
 	worldTransform_.translation_.x = max(worldTransform_.translation_.x, -kMoveLimitX);
