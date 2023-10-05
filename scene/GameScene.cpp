@@ -14,7 +14,7 @@ void GameScene::Initialize() {
 	textureHandle_ = TextureManager::Load("enemy.png");
 	model_ = Model::Create();
 	viewProjection_.Initialize();
-	enemy_->Initialize(model_, textureHandle_);
+	enemy_->Initialize(model_, textureHandle_,20,0);
 }
 
 void GameScene::Update() {
