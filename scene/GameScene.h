@@ -52,7 +52,11 @@ private: // メンバ変数
 	/// </summary>
 	///
 	uint32_t textureHandle_ = 0;
+
 	Model* model_ = nullptr;
+
 	ViewProjection viewProjection_;
-	Enemy* enemy_ = new Enemy;
+	Enemy* enemy_[6];
+
+
 };

@@ -1,13 +1,17 @@
 ﻿#include "Enemy.h"
 #include "ImGuiManager.h"
-void Enemy::Initialize(Model* model, uint32_t textureHandle, float x, float y) {
+void Enemy::Initialize(
+    Model* model, uint32_t textureHandle, float x, float y, float kCharacterSpeedx,
+    float kCharacterSpeedy) {
 	model_ = model;
 	textureHandle_ = textureHandle;
 	worldTransform_.Initialize();
 	worldTransform_.translation_.x = x;
 	worldTransform_.translation_.y = y;
-	move.x = kCharacterSpeed;
-	move.y = kCharacterSpeed;
+	kCharacterSpeedX_ = kCharacterSpeedx;
+	kCharacterSpeedY_ = kCharacterSpeedy;
+	move.x = kCharacterSpeedX_;
+	move.y = kCharacterSpeedY_;
 }
 
 void Enemy::Update() {
@@ -18,12 +22,12 @@ void Enemy::Update() {
 	    worldTransform_.translation_.z};
 	///
 
-	if (worldTransform_.translation_.x > 30.0) {
+	if (worldTransform_.translation_.x > 35.0) {
 
 		move.x *= -1;
 	}
 
-	if (worldTransform_.translation_.x < -30.0) {
+	if (worldTransform_.translation_.x < -35.0) {
 
 		move.x *= -1;
 	}
@@ -44,7 +48,7 @@ void Enemy::Update() {
 
 	ImGui::Begin("enemy");
 	ImGui::SliderFloat3("trns", inputFloat3, -33.0f, 33.0f);
-	ImGui::SliderFloat("kCharacterSpeed", &kCharacterSpeed, -5.0f, 5.0f);
+	ImGui::SliderFloat("kCharacterSpeed", &kCharacterSpeedX_, -5.0f, 5.0f);
 	ImGui::End();
 
 	///
