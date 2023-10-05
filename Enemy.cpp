@@ -1,4 +1,4 @@
-#include "Enemy.h"
+﻿#include "Enemy.h"
 
 void Enemy::Initialize(Model* model, uint32_t textureHandle) {
 	model_ = model;
