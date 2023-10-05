@@ -1,6 +1,6 @@
 ﻿#include"math.h"
 #define _USE_MATH_DEFINES
-#include <cassert>
+//#include <cassert>
 #include <cmath>
 
 Matrix4x4 Multiply(const Matrix4x4& m1, const Matrix4x4& m2) {
