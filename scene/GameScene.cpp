@@ -17,7 +17,11 @@ void GameScene::Initialize() {
 	enemy_->Initialize(model_, textureHandle_);
 }
 
-void GameScene::Update() {}
+void GameScene::Update() {
+	
+
+	    enemy_->Update();
+}
 
 void GameScene::Draw() {
 
