@@ -1,7 +1,8 @@
-﻿#include"math.h"
+﻿#include"mathh.h"
 #define _USE_MATH_DEFINES
-//#include <cassert>
+#include <cassert>
 #include <cmath>
+
 
 Matrix4x4 Multiply(const Matrix4x4& m1, const Matrix4x4& m2) {
 	Matrix4x4 result{};
@@ -132,6 +133,10 @@ Matrix4x4 MakeAffineMatrix(const Vector3& scale, const Vector3& rotate, const Ve
 
 	return result;
 }
+
+
+
+
 
 Vector3 Add(const Vector3& v1, const Vector3& v2) {
 	Vector3 result{};

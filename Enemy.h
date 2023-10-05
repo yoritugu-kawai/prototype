@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include"mathh.h"
 #include<Model.h>
 #include<WorldTransform.h>
 class Enemy  {
