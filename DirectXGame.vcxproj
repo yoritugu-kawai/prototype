@@ -112,6 +112,7 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mathh.cpp" />
+    <ClCompile Include="mpdel.cpp" />
     <ClCompile Include="scene\GameScene.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +146,7 @@
     <ClInclude Include="math\Vector2.h" />
     <ClInclude Include="math\Vector3.h" />
     <ClInclude Include="math\Vector4.h" />
+    <ClInclude Include="mpdel.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="scene\GameScene.h" />
   </ItemGroup>

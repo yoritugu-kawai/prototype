@@ -9,7 +9,7 @@
 #include "ViewProjection.h"
 #include "WorldTransform.h"
 
-
+#include "mpdel.h"
 #include"Enemy.h"
 /// <summary>
 /// ゲームシーン
@@ -58,6 +58,7 @@ private: // メンバ変数
 
 	ViewProjection viewProjection_;
 	Enemy* enemy_[6];
-
+	modelenemy* enemyy;
+	Model* enemmy;
 
 };

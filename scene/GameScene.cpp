@@ -16,6 +16,9 @@ void GameScene::Initialize() {
 	
 	viewProjection_.Initialize();
 
+	enemmy = Model::CreateFromOBJ("enemy" ,true);
+	enemyy = new modelenemy;
+	enemyy->Initialize(enemmy);
 	
 	enemy_[0] = new Enemy;
 	enemy_[1] = new Enemy;
@@ -69,12 +72,14 @@ void GameScene::Draw() {
 	/// <summary>
 	/// ここに3Dオブジェクトの描画処理を追加できる
 	/// </summary>
-	enemy_[0]->Draw(viewProjection_);
+	/*enemy_[0]->Draw(viewProjection_);
 	enemy_[1]->Draw(viewProjection_);
 	enemy_[2]->Draw(viewProjection_);
 	enemy_[3]->Draw(viewProjection_);
 	enemy_[4]->Draw(viewProjection_);
-	enemy_[5]->Draw(viewProjection_);
+	enemy_[5]->Draw(viewProjection_);*/
+
+	enemyy->Draw(viewProjection_);
 	// 3Dオブジェクト描画後処理
 	Model::PostDraw();
 #pragma endregion
